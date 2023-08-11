@@ -22,7 +22,7 @@ export const FeedbackProvider = ({children}) => {
       },
   ])
 
-  const [FeedbackEdit, setFeedbackEdit] = useState({
+  const [feedbackEdit, setFeedbackEdit] = useState({
     item: {},
     edit: false
   })
@@ -54,7 +54,8 @@ export const FeedbackProvider = ({children}) => {
           feedback,
           deleteFeedback,
           addFeedback,
-          editFeedback
+          editFeedback,
+          feedbackEdit,
       }}
   >
       {children}
