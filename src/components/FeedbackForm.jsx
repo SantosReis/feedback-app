@@ -41,6 +41,8 @@ function FeedbackForm() {
         text, rating
       }
 
+      console.log(newFeedback)
+
       if(feedbackEdit.edit === true){
         updateFeedback(feedbackEdit.item.id, newFeedback)
       }else {
